@@ -8,8 +8,7 @@ Place your Java WAR files in this directory before building the container.
 webapps/
 ├── ROOT.war          # Main application (accessible at /)
 ├── LIVE.war          # Live application (accessible at /LIVE)
-├── images.war        # Images service (accessible at /images)
-└── smvs.war          # SMVS application (accessible at /smvs)
+└── images.war        # Images service (accessible at /images)
 ```
 
 ## Important Notes

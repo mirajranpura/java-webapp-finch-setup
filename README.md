@@ -54,7 +54,6 @@ finch run -p 8080:8080 java-webapp
 - Main app: http://localhost:8080/
 - LIVE app: http://localhost:8080/LIVE
 - Images: http://localhost:8080/images
-- SMVS: http://localhost:8080/smvs
 
 ## Configuration
 - Tomcat runs on port 8080 inside the container
