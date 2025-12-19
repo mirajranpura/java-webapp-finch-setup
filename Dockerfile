@@ -10,8 +10,8 @@ RUN apt-get update && apt-get install -y \
 # Remove default webapps
 RUN rm -rf /usr/local/tomcat/webapps/*
 
-# Copy WAR files to webapps directory
-COPY wars/*.war /usr/local/tomcat/webapps/
+# Copy WAR files to webapps directory.
+COPY webapps/*.war /usr/local/tomcat/webapps/
 
 # Set Java options for better debugging and memory management
 ENV JAVA_OPTS="-Xmx1024m -Xms512m -XX:+UseG1GC -XX:+PrintGCDetails -Djava.awt.headless=true -Dfile.encoding=UTF-8"
