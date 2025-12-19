@@ -1,0 +1,32 @@
+# Ignore WAR files in webapps directory
+webapps/
+
+# Ignore log files
+logs/
+*.log
+
+# Ignore debug files
+debug/
+
+# Ignore wars directory (if using alternative location)
+wars/
+
+# Ignore macOS system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Ignore temporary files
+*.tmp
+*.temp
