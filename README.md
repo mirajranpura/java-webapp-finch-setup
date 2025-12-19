@@ -16,7 +16,6 @@ A containerized Java web application environment using Finch (Docker alternative
   - `ROOT.war` - Main application (accessible at `/`)
   - `LIVE.war` - Live application (accessible at `/LIVE`)
   - `images.war` - Images service (accessible at `/images`)
-  - `smvs.war` - SMVS application (accessible at `/smvs`)
 - `logs/` - Tomcat logs (mounted from container)
 
 **Important:** Place your WAR files in the `webapps/` directory before building the container. The Dockerfile copies all `*.war` files from `webapps/` to Tomcat's webapps directory.
