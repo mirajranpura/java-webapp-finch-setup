@@ -1,5 +1,6 @@
 # Ignore WAR files in webapps directory
-webapps/
+webapps/*.war
+webapps/*.WAR
 
 # Ignore log files
 logs/

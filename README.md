@@ -1,8 +1,15 @@
 # Java Web Application Finch Setup
 
-This Finch setup runs your Java web applications using:
-- **Java 8** (OpenJDK)
-- **Tomcat 9.0**
+A containerized Java web application environment using Finch (Docker alternative) with Tomcat 9.
+
+## Features
+
+- **Java 8** (OpenJDK) runtime
+- **Tomcat 9.0** application server
+- **Finch/Docker** containerization
+- **Health checks** and monitoring
+- **JMX** support for debugging
+- **Volume mounting** for logs and easy development
 
 ## Directory Structure
 - `webapps/` - **This directory should contain your WAR files**
@@ -62,3 +69,20 @@ finch run -p 8080:8080 java-webapp
 - Access container: `finch compose exec tomcat-app bash`
 - View Tomcat logs: `finch compose exec tomcat-app tail -f /usr/local/tomcat/logs/catalina.out`
 - List deployed applications: `finch compose exec tomcat-app ls -la /usr/local/tomcat/webapps/`
+
+## Prerequisites
+
+- [Finch](https://github.com/runfinch/finch) installed on your system
+- Java WAR files ready for deployment
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
